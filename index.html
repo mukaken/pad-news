@@ -1,0 +1,13 @@
+---
+layout: default
+title: 記事一覧
+---
+<h1>Power Automate for desktop<br>ニュース</h1>
+<p>新しいアクションやリリースの変更点を、公式情報をもとに日本語で紹介します。</p>
+{% for post in site.posts %}
+<article class="entry">
+<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y年%m月%d日" }}</time>
+<h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+<p>{{ post.description | escape }}</p>
+</article>
+{% endfor %}
