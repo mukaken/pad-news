@@ -1,0 +1,7 @@
+title: PADニュース
+description: Power Automate for desktop の更新情報を日本語で紹介する非公式ブログ
+lang: ja
+timezone: Asia/Tokyo
+baseurl: /pad-news
+permalink: /news/:year/:month/:day/:title/
+exclude: [README.md]
